@@ -1,0 +1,111 @@
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.login-form {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 2rem 3rem;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 255, 150, 0.2);
+  max-width: 400px;
+  width: 90%;
+  backdrop-filter: blur(8px);
+  text-align: center;
+  border: 1px solid rgba(0, 255, 150, 0.2);
+}
+
+.login-title {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.login-input {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  margin: 0.5rem 0;
+  border: 1px solid #888;
+  border-radius: 8px;
+  background-color: transparent;
+  color: inherit;
+  font-family: inherit;
+  transition: border-color 0.3s;
+}
+.login-input:focus {
+  outline: none;
+  border-color: #00ffc8;
+}
+.login-btn {
+  display: flex;
+  justify-content: center; /* Center the text horizontally */
+  align-items: center;     /* Center the text vertically */
+  width: 100%;
+  padding: 1rem;           /* Adjust padding for better vertical alignment */
+  background-color: #00ffc8;
+  color: #000;
+  font-weight: bold;
+  font-size: 1.5rem;       /* Adjust font size */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-top: 10%;
+}
+
+.login-btn:hover {
+  background-color: #00b38f;
+}
+
+.user-admin-toggle {
+  margin-top: 2rem;
+  padding-top: 10%;
+}
+.user-admin-toggle a {
+  margin: 0 0.5rem;
+  text-decoration: none;
+  color: #00ffc8;
+  transition: color 0.3s;
+}
+.user-admin-toggle a:hover {
+  color: #00b38f;
+}
+.user-admin-toggle .active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+.login-header {
+  margin-top: 0%;
+  position: absolute;
+  padding-top: 1%;
+  top: 2rem;
+  font-size: 10.2rem;
+  text-align: center;
+  width: 100%;
+  color: #00ffc8;
+  font-family: "Fira Code", monospace;
+  text-shadow: 0 0 10px #00ffc8;
+  letter-spacing: 2px;
+}
+.hr {
+  margin-top: 0%;
+  margin-bottom: 400%;
+}
+/* App.css */
+.app {
+  padding-top: 70px; /* Adjust based on navbar height if fixed */
+}
+
+.navbar {
+  z-index: 1; /* prevent overlap if you add more layers */
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden; /* No scroll */
+}

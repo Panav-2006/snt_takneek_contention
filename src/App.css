@@ -1,0 +1,191 @@
+/* Base app styles */
+.app {
+  font-family: "Fira Code", monospace;
+  height: 100vh;
+  margin: 0;
+  position: relative;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* Dark mode styles */
+.dark {
+  background-color: #0f1117; /* Dark background */
+  color: #e0e0e0; /* Light text */
+}
+
+/* Light mode styles */
+.light {
+  background-color: #4139b5; /* Subtle grayish background for day mode */
+  color: #ff0062; /* Dark text for high contrast */
+} /*conneting colour of day mode to userpanel from login page */
+
+/* Theme toggle button */
+.theme-toggle {
+  position: absolute;
+  top: 100px; /* Move it lower below the navbar */
+  right: 20px;
+  z-index: 999;
+  cursor: pointer;
+  font-size: 1.8rem;
+  border-radius: 8px;
+  background-color: #e0e0e0;
+  transition: background-color 0.3s, color 0.3s;
+  padding: 12px;
+}
+
+.dark .theme-toggle {
+  background-color: #333;
+  color: #fff;
+}
+
+.theme-toggle:hover {
+  background-color: #00b38f;
+  color: #fff;
+}
+
+/* Navbar styles */
+.navbar {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #2c3e50; /* Dark background for navbar */
+  color: #fff;
+  padding: 1rem;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.navbar .navbar-brand {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+}
+
+.navbar .navbar-nav .nav-link {
+  font-size: 1.1rem;
+  color: #ecf0f1; /* Light gray text for navbar links */
+  transition: color 0.3s ease-in-out;
+}
+
+/* Navbar hover effect */
+.navbar .navbar-nav .nav-link:hover {
+  color: #1abc9c; /* Light cyan hover effect */
+}
+
+/* Navbar light mode styles */
+.light .navbar {
+  background-color: #3498db; /* Blue for day mode */
+}
+
+.light .navbar .navbar-brand,
+.light .navbar .nav-link {
+  color: #fff;
+}
+
+.light .navbar .nav-link.active {
+  color: #00bcd4; /* Active link color */
+}
+
+/* Content areas (Login Form, Panels) */
+.login-container,
+.admin-panel,
+.user-panel {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: none; /* Remove box shadow */
+  margin: 100px auto;
+  width: 80%;
+  max-width: 600px;
+  background-color: transparent; /* Make the background transparent */
+  border: none; /* Remove borders */
+}
+
+/* Smooth transition for navbar and theme toggle button */
+.app,
+.navbar,
+.theme-toggle {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Light Mode Content (Login Form, Panels) */
+.light .login-container,
+.light .admin-panel,
+.light .user-panel {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+/* Form and Button styles for Login */
+.light .login-input {
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.light .login-input:focus {
+  border-color: #00bcd4;
+  outline: none;
+}
+
+.light .login-btn {
+  background-color: #00bcd4;
+  color: white;
+  border: none;
+  padding: 12px 30px; /* Increase padding to ensure a larger button */
+  width: auto; /* Let the width adjust to the content */
+  font-size: 1.5rem; /* Larger font size */
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.light .login-btn:hover {
+  background-color: #0097a7;
+}
+
+.light .user-admin-toggle {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.light .user-admin-toggle a {
+  color: #00bcd4;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.light .user-admin-toggle a:hover {
+  color: #0097a7;
+}
+
+/* Light mode button hover effect */
+.light .theme-toggle:hover {
+  background-color: #45f2f5; /* Slightly darker cyan */
+  color: #fff;
+}
+
+/* Content area padding */
+.page-content {
+  padding-top: 80px; /* Adjust to your navbar height */
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+/* Light Mode Navbar Styles */
+.light .navbar {
+  background-color: #3498db; /* Blue background for light mode */
+}
+/* Add this to target your heading specifically in light mode */
+.light .navbar .navbar-brand {
+  color: #000; /* Black color for light mode */
+}
+.light .login-container h2 {
+  color: #ff0062;
+  font-weight: bold;
+}
